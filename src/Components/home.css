@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas con el mismo tamaño */
+  gap: 20px; /* Espacio entre las imágenes */
+}
+
+.image-container {
+    position: relative;
+    width: calc(90% - 1px); /* Ancho para que haya 4 imágenes por fila con espacio entre ellas */
+    /* Resto de tus estilos para .image-container */
+  }
+
+/* Estilo para las imágenes */
+.image {
+  width: 100%; /* Establecer un ancho del 100% para que todas las imágenes tengan el mismo tamaño */
+  max-width: 110%; /* Para que las imágenes no sean más grandes que su contenedor */
+  height: auto;
+}
+
+
+.box-check {
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  display: none; /* Oculta el checkbox nativo */
+}
+
+label {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: #f07c19; /* Cambia el color de fondo cuando se selecciona */
+  color: #fff;
+}
+
+/* Nuevos estilos para los checkboxes debajo de las imágenes */
+
+.image-checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkbox-label {
+  cursor: pointer;
+}
+
+/* Estilo para el contenedor de imágenes generadas */
+
+.generated-images-container {
+    padding-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px; /* Espacio entre las imágenes */
+    max-width: 1200px; /* Ancho máximo para evitar que las imágenes se extiendan demasiado */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+  }
+  
+  /* Estilo para cada imagen generada */
+  .generated-image {
+    width: calc(25% - 10px); /* Ancho para que haya 4 imágenes por fila con espacio entre ellas */
+    box-sizing: border-box; /* Incluir el borde en el ancho de la imagen */
+  }
