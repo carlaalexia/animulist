@@ -134,7 +134,7 @@ function Home() {
     imageContainer.style.display = "block";
 
     const nameContainer = document.querySelector(".name-container");
-    nameContainer.innerHTML = `<strong>Animes temporada otoño de ${name}</strong>`;
+    nameContainer.innerHTML = `<strong>Animes de temporada de ${name}</strong>`;
 
     html2canvas(imageContainer).then((canvas) => {
       const generatedImage = canvas.toDataURL("image/jpeg");
