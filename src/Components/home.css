@@ -92,3 +92,11 @@
     }
   }
   
+
+ /* Modifica el ancho máximo para pantallas grandes */
+ @media (min-width: 1200px) {
+    .generated-images-container {
+      max-width: 12000px; /* Puedes ajustar este valor según tus necesidades */
+      margin-left: 10px;
+    }
+  }
