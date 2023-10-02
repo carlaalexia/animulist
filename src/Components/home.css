@@ -74,12 +74,21 @@
       box-sizing: border-box; /* Incluir el borde en el ancho de la imagen */
     }
 
-    /* Media Query para dispositivos con un ancho máximo de 768px (tamaño de pantalla de tableta y teléfono) */
+/* Media Query para dispositivos con un ancho máximo de 768px (tamaño de pantalla de tableta y teléfono) */
 @media (max-width: 768px) {
     /* Cambia a 1 columna en dispositivos con un ancho máximo de 768px */
     .image-grid {
       grid-template-columns: repeat(1, 1fr);
-      align-items: center;
+    }
+  
+    /* Centra las imágenes verticalmente */
+    .image-container {
+      display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 18px;
     }
   }
+  
